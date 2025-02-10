@@ -4,19 +4,15 @@
 }
 
 body {
-    font-size: 16px;
+    font-size: clamp(12px, 2.5vw, 16px);
     width: 100vw;
     height: 100vh;
     background-color: hsl(47, 88%, 63%);
+    font-family: Figtree;
+    place-items: center;
+    margin: 0;
+    display: grid;
 }
-
-/* .background {
-    background-color: hsl(47, 88%, 63%);
-    width: 80vw;
-    height: 80vh;
-    margin: auto;
-    box-shadow: 10px 10px 5px hsl(0, 0%, 42%);
-} */
 
 .card {
     background-color: white;
@@ -27,6 +23,7 @@ body {
     height: 32.625em;
     width: 24em;
     margin: auto;
+    justify-items: center;
 }
 
 .content {
@@ -47,16 +44,14 @@ body {
     width: min-content;
     font-weight: bold;
     padding: 5px 10px ;
-    font-family: Figtree;
     margin-bottom: 1em;
 }
 
-h1 {
-    font-family: Figtree;
+h2 {
     font-weight: bold;
 }
 
-h1:hover {
+h2:hover {
     color: hsl(47, 88%, 63%);
 }
 
@@ -65,7 +60,6 @@ h1:hover {
     display: flex;
     text-align: center;
     align-items: center;
-    /* height: 1.5em */
 }
 
 .profile-image {
